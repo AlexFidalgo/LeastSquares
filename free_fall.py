@@ -9,6 +9,7 @@ plt.xlabel("time")
 plt.ylabel("height")
 plt.show()
 
+# At * A * x = At * b => G * x = d
 At = np.asmatrix([np.ones(len(t)), t, t**2])
 A = np.transpose(At)
 G = np.matmul(At, A) #normal system matrix
